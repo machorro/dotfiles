@@ -1,6 +1,3 @@
-[user]
-	name = Humberto Gutierrez
-	email = lizard.machorro@gmail.com
 [core]
 	excludesfile = /Users/machorro/.gitignore_global
 [difftool "sourcetree"]

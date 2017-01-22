@@ -1,15 +1,42 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+
 - clean: ['~']
 
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
 - link:
-    ~/.gitconfig:
-        path: gitconfig
-        create: false
-        relink: false
-        force: false
+    ~/.mackup.cfg: mackup.cfg
+    ~/.gitconfig: gitconfig
+    ~/.gitconfig.local: gitconfig.local
+    ~/.gitignore_global: 
+        path: gitignore_global
+        force: true
+    # ZSH
     ~/.zshrc:
-        path: zshrc
-        create: false
-        relink: false
-        force: false
-
-
+    ~/.zsh:
+    ~/.oh-my-zsh:
+        path: oh-my-zsh
+        force: true
+    ~/.dotfiles/oh-my-zsh/custom/themes: 
+        path: zsh/themes
+        create: true
+    # Atom
+    ~/.atom: 
+        path: atom
+        force: true
+    # vim
+    ~/.xvimrc: vimrc # Xvim
+    ~/.vimrc: vimrc    
+    
+- shell:
+    # - description: Installing Homebrew
+    #   command: . scripts/brew.sh
+    # - description: Configuring macOS defaults
+    #   command: . scripts/macOS.sh
+    # - [apm install --packages-file atom/packages.list]
+    - description: Installing iTerm theme
+      command: [open iterm/PaulMillr.itermcolors;ok]

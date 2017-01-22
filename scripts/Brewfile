@@ -1,0 +1,92 @@
+# Taps
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+tap 'caskroom/versions'
+tap 'homebrew/bundle'
+tap 'homebrew/dupes'
+
+# Install GNU utilities
+brew 'coreutils'
+brew 'moreutils'
+brew 'findutils'
+brew 'tree'
+brew 'wget'
+brew 'grep'
+brew 'openssh'
+
+# Update git and install utilities
+brew 'git'
+brew 'git-extras'
+brew 'hub'
+
+# Update python
+brew 'python'
+
+# Intall ZSH
+brew 'zsh'
+brew 'zsh-completions'
+
+# Install bash
+brew 'bash'
+
+# Install Xcode helpers
+brew 'xcenv'
+
+# Node and Rails
+brew 'nvm'
+
+# Settings backup
+brew 'mackup'
+
+# Casks
+cask '1password-beta'
+cask 'dropbox'
+cask 'spectacle'
+cask 'flux'
+cask 'imageoptim'
+cask 'imagealpha'
+cask 'iterm2'
+cask 'atom'
+cask 'google-chrome'
+cask 'tower'
+cask 'franz'
+cask 'spotify'
+cask 'alfred'
+cask 'realm-browser'
+cask 'safari-technology-preview'
+cask 'nvalt'
+cask 'tunnelblick-beta'
+cask 'fastlane'
+cask 'garmin-express'
+
+
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'qlprettypatch'
+cask 'quicklook-csv'
+cask 'betterzipql'
+cask 'qlimagesize'
+cask 'webpquicklook'
+cask 'suspicious-package'
+cask 'provisionql'
+
+# Fonts
+cask 'font-source-code-pro'
+cask 'font-inconsolata'
+cask 'font-hack'
+cask 'font-anonymous-pro'
+
+
+# Mac App Store Apps
+mas 'Tweetbot', id: 557168941
+mas 'Expressions', id: 913158085
+mas 'Rested', id: 421879749
+mas '1Blocker', id: 1107421413
+mas 'DayOne', id: 1055511498
+# mas 'aText', id: 488566438
+mas '2Do', id: 477670270
+mas 'Syntra', id: 1094640838
+mas 'TextWrangler', id: 404010395
+mas 'Boom2', id: 948176063

@@ -4,6 +4,7 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
+tap 'hombrew/fuse'
 
 # Install GNU utilities
 brew 'coreutils'
@@ -13,36 +14,34 @@ brew 'tree'
 brew 'wget'
 brew 'grep'
 brew 'openssh'
+brew 'osxutils'
 
 # Update git and install utilities
 brew 'git'
 brew 'git-extras'
 brew 'hub'
+brew 'wifi-password'
+brew 'httpie'
+brew 'ccat'
+brew 'highlight'
 
-# Update python
-brew 'python'
-
-# Intall ZSH
+# Intall shells
 brew 'zsh'
 brew 'zsh-completions'
-
-# Install bash
+brew 'fish'
 brew 'bash'
 
-# Install Xcode helpers
-brew 'xcenv'
-
-# Node and Rails
-brew 'nvm'
+# Dev tools
+brew 'xcenv' # Install Xcode helpers
+brew 'nvm' # Node and Rails
+brew 'python'
 
 # Settings backup
-brew 'mackup'
+brew 'mackup' 
 
 # Casks
 cask '1password-beta'
 cask 'dropbox'
-cask 'spectacle'
-cask 'flux'
 cask 'imageoptim'
 cask 'imagealpha'
 cask 'iterm2'
@@ -58,8 +57,14 @@ cask 'nvalt'
 cask 'tunnelblick-beta'
 cask 'fastlane'
 cask 'garmin-express'
+cask 'insomnia'
+cask 'macvim'
+cask 'osxfuse'
 
+# SSH File System
+brew 'sshfs' #this has to be installed after osxfuse
 
+# Quicklook Plugins
 cask 'qlcolorcode'
 cask 'qlstephen'
 cask 'qlmarkdown'
@@ -78,15 +83,15 @@ cask 'font-inconsolata'
 cask 'font-hack'
 cask 'font-anonymous-pro'
 
-
 # Mac App Store Apps
 mas 'Tweetbot', id: 557168941
 mas 'Expressions', id: 913158085
-mas 'Rested', id: 421879749
 mas '1Blocker', id: 1107421413
 mas 'DayOne', id: 1055511498
-# mas 'aText', id: 488566438
+mas 'aText', id: 488566438
 mas '2Do', id: 477670270
 mas 'Syntra', id: 1094640838
 mas 'TextWrangler', id: 404010395
 mas 'Boom2', id: 948176063
+mas 'Magnet', id: 441258766
+mas 'Marked 2' id: 890031187

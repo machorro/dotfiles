@@ -15,7 +15,7 @@ brew tap homebrew/bundle
 brew bundle install
 
 # Make ZSH the default shell environment
-chsh -s $(which zsh)
+chsh -s $(which fish)
 
 # Remove outdated versions from the cellar
 brew cleanup

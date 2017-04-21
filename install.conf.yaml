@@ -15,15 +15,6 @@
     ~/.gitignore_global: 
         path: gitignore_global
         force: true
-    # ZSH
-    ~/.zshrc:
-    ~/.zsh:
-    ~/.oh-my-zsh:
-        path: oh-my-zsh
-        force: true
-    ~/.dotfiles/oh-my-zsh/custom/themes: 
-        path: zsh/themes
-        create: true
     # Atom
     ~/.atom: 
         path: atom

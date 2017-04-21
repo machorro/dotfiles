@@ -9,6 +9,7 @@
     - [git submodule update --init --recursive, Installing submodules]
 
 - link:
+    ~/.config/fish: .dotfiles/fish
     ~/.mackup.cfg: mackup.cfg
     ~/.gitconfig: gitconfig
     ~/.gitconfig.local: gitconfig.local
@@ -20,14 +21,31 @@
         path: atom
         force: true
     # vim
-    ~/.xvimrc: vimrc # Xvim
-    ~/.vimrc: vimrc    
-    
+    ~/.vim: vim
+    ~/.xvimrc: xvimrc # Xvim
+    ~/.vimrc: vimrc
+    ~/.gvirmc: gvimrc
+
+# installs software
 - shell:
-    # - description: Installing Homebrew
-    #   command: . scripts/brew.sh
-    # - description: Configuring macOS defaults
-    #   command: . scripts/macOS.sh
-    # - [apm install --packages-file atom/packages.list]
-    - description: Installing iTerm theme
-      command: [open iterm/PaulMillr.itermcolors;ok]
+    - 
+      command: . scripts/brew.sh
+# Configures macOS
+- shell:
+    - 
+      command: . scripts/macOS.sh
+# Installs Atom Packages
+- shell:
+    - [apm install --packages-file atom/packages.list, Install Atom Packages]
+    - [curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim, Install vim-plug]
+    - [curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher]
+# Install fisher packages
+- shell:
+    - fisher simple
+# Restore Mackup
+- shell:
+    - mackup restore
+# Installs iTerm Theme
+- shell:
+    - 
+      command: [open iterm/Dracula.itermcolors;ok]

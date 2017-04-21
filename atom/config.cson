@@ -15,7 +15,7 @@
     telemetryConsent: "limited"
     themes: [
       "dark-flat-ui"
-      "outlander-syntax"
+      "dracula-theme"
     ]
   "dark-flat-ui": {}
   editor:

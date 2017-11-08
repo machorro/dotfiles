@@ -1,4 +1,4 @@
-set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/sbin /usr/local/ /usr/local/git/bin   $HOME/.fastlane/bin/fastlane_lib
+set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/sbin /usr/local/  $HOME/.fastlane/bin/fastlane_lib
 #$HOME/bin $HOME/dotfiles/bin $HOME/.rvm/bin $(brew --prefix ruby)/bin $(brew --prefix)/share/npm/bin
 
 # fuxor git to non-interactively merge commits
@@ -15,7 +15,7 @@ set -x LS_COLORS "di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34:su=0:sg=0:tw=0:ow
 set -x GREP_OPTIONS '--color=auto'
 set -x GREP_COLOR '3;33'
 
-set -x PAGER 'less'
+set -x PAGER 'less -X'
 set -x EDITOR 'vim'
 
 set -x LANG en_CA.UTF-8
@@ -27,3 +27,6 @@ set -x LC_COLLATE C
 set hilite (which highlight)
 set -x LESSOPEN "| $hilite %s --out-format xterm256 --line-numbers --quiet --force --style vampire"
 set -x LESS " -R --ignore-case --raw-control-chars"
+
+# rbenv
+status --is-interactive; and source (rbenv init -|psub)

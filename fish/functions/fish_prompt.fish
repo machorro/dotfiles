@@ -1,0 +1,1 @@
+/Users/machorro/.config/fisherman/simple/functions/fish_prompt.fish

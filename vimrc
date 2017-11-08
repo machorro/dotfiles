@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 
 " UI
 Plug 'crusoexia/vim-monokai'
+Plug 'dracula/vim'
 Plug 'itchyny/lightline.vim'
 
 " Syntastic
@@ -53,7 +54,8 @@ set spelllang=en_ca
 
 " Color Schemes
 syntax on
-colorscheme monokai
+"" colorscheme monokai
+colorscheme dracula 
 set t_Co=256  " vim-monokai now only support 256 colours in terminal.
 
 " removed curly braces error for obj-c blocks

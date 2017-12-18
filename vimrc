@@ -116,6 +116,9 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
+" Color Schemes
+syntax on
+"" colorscheme monokai
 colorscheme dracula 
 set t_Co=256  " vim-monokai now only support 256 colours in terminal.
 

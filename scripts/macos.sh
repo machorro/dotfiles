@@ -358,6 +358,9 @@ find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -dele
 # Move Dock to Left side
 defaults write com.apple.dock orientation left
 
+# Prevents Apps from becoming zombies after being unattended in the background
+defaults write -g NSDisableAutomaticTermination -bool TRUE
+
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################

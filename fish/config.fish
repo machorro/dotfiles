@@ -1,4 +1,4 @@
-set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/sbin /usr/local/  $HOME/.fastlane/bin/fastlane_lib
+set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local  $HOME/.fastlane/bin/fastlane_lib
 #$HOME/bin $HOME/dotfiles/bin $HOME/.rvm/bin $(brew --prefix ruby)/bin $(brew --prefix)/share/npm/bin
 
 # fuxor git to non-interactively merge commits
@@ -29,4 +29,4 @@ set -x LESSOPEN "| $hilite %s --out-format xterm256 --line-numbers --quiet --for
 set -x LESS " -R --ignore-case --raw-control-chars"
 
 # rbenv
-status --is-interactive; and source (rbenv init -|psub)
+# status --is-interactive; and source (rbenv init -|psub)

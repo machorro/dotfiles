@@ -4,17 +4,22 @@
 call plug#begin('~/.vim/plugged')
 
 " UI
-Plug 'crusoexia/vim-monokai'
+"Plug 'crusoexia/vim-monokai'
+Plug 'dracula/vim'
 Plug 'itchyny/lightline.vim'
 
 " Syntastic
-Plug 'scrooloose/syntastic'
+Plug 'vim-syntastic/syntastic'
 
 " Search
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'mileszs/ack.vim'
-Plug 'a.vim'
+"Plug 'a.vim'
+
+" Swift
+Plug 'keith/swift.vim'
+Plug 'TheCodedSelf/syntastic-swift'
 
 " Initialize plugin system
 call plug#end()
@@ -111,7 +116,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
-colorscheme monokai
+colorscheme dracula 
 set t_Co=256  " vim-monokai now only support 256 colours in terminal.
 
 " Set extra options when running in GUI mode
@@ -267,8 +272,12 @@ set spelllang=en_ca
 nnoremap <CR> :nohlsearch<cr>
 
 " a.vim setting for objc
-let g:alternateExtensions_m = "h"
-let g:alternateExtensions_h = "m"
+"let g:alternateExtensions_m = "h"
+"let g:alternateExtensions_h = "m"
+
+" swift lint defaults
+let g:syntastic_swift_swiftlint_use_defaults = 1
+let g:syntastic_swift_checkers = ['swiftlint', 'swiftpm'] 
 
 set splitright
 set splitbelow

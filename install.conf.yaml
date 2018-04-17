@@ -16,6 +16,7 @@
     ~/.gitignore_global: 
         path: gitignore_global
         force: true
+    ~/.hyper.js: hyper.js
     # Atom
     ~/.atom: 
         path: atom

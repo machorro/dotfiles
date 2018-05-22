@@ -76,7 +76,7 @@ module.exports = {
     // make sure to use a full path if the binary name doesn't work
     // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
     // if you're using powershell, make sure to remove the `--login` below
-    shell: '',
+    shell: '/usr/local/bin/fish',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
@@ -89,7 +89,7 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
@@ -99,6 +99,10 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+
+    ayu: {
+      noBorder: true
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -109,12 +113,13 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
       //Themes
-  //    "hyper-chesterish-vibrancy",
-      //"hyper-dracula",
-      "hyperterm-panda",
+      // "hyperterm-panda", // dark
+      // "hyper-papercolor", // light
+      'hyper-ayu-light',
+
       //    Plugins
+      "hyper-statusline",
       "hyperlinks",
-      // "hyperline",
       "hyperterm-1password",
       "hyperterm-dibdabs",
       "hyperterm-paste",

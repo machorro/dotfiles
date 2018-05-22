@@ -1,1 +1,1 @@
-/Users/humbertog/.config/fisherman/simple/functions/fish_right_prompt.fish
+/Users/humbertog/.config/fisherman/pure/fish_right_prompt.fish

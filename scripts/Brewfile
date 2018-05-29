@@ -39,6 +39,7 @@ brew 'swiftlint'
 brew 'swiftgen'
 brew 'cocoapods'
 brew 'carthage'
+brew 'chisel'
 
 # Settings backup
 brew 'mackup' 

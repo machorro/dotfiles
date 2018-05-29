@@ -26,6 +26,8 @@
     ~/.xvimrc: xvimrc # Xvim
     ~/.vimrc: vimrc
     ~/.gvirmc: gvimrc
+    # LLDBD
+    ~/.lldbinit: lldbinit
 
 # installs software
 - shell:

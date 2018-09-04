@@ -65,6 +65,7 @@ cask 'insomnia'
 cask 'macvim'
 cask 'osxfuse'
 cask 'hyper'
+cask 'cyberduck'
 
 # SSH File System
 brew 'sshfs' #this has to be installed after osxfuse
@@ -95,7 +96,6 @@ mas '1Blocker', id: 1107421413
 mas 'DayOne', id: 1055511498
 mas 'aText', id: 488566438
 mas '2Do', id: 477670270
-mas 'Boom2', id: 948176063
 mas 'Magnet', id: 441258766
 mas 'Marked 2' id: 890031187
 mas 'Slack' id:803453959

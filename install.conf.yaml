@@ -32,6 +32,10 @@
 - shell:
     command: . scripts/macOS.sh
 - shell:
+    - [git config --global core.excludesfile ~/.gitignore_global, Setting up global gitignore]
+- shell:
+    - [gem install bundler & bundle install ~/.dotfiles/, Install Bundler and Install Gems]
+- shell:
     - [echo "/usr/local/bin/fish" | sudo tee -a /etc/shells]
 - shell:
     - [chsh -s /usr/local/bin/fish]
@@ -46,5 +50,3 @@
 # Installs iTerm Theme
 # - shell:
 #     command: [open iterm/Dracula.itermcolors;ok]
-- shell:
-    command: git config --global core.excludesfile ~/.gitignore_global

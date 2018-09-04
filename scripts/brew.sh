@@ -19,4 +19,3 @@ chsh -s $(which fish)
 
 # Remove outdated versions from the cellar
 brew cleanup
-brew cask cleanup

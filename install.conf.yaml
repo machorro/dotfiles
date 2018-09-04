@@ -34,7 +34,7 @@
 - shell:
     - [git config --global core.excludesfile ~/.gitignore_global, Setting up global gitignore]
 - shell:
-    - [gem install bundler & bundle install ~/.dotfiles/, Install Bundler and Install Gems]
+    - [sudo gem install bundler & bundle install ~/.dotfiles/, Install Bundler and Install Gems]
 - shell:
     - [echo "/usr/local/bin/fish" | sudo tee -a /etc/shells]
 - shell:

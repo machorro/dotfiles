@@ -27,10 +27,10 @@
 
 # installs software
 - shell:
-      command: . scripts/brew.sh
+    command: . scripts/brew.sh
 # Configures macOS
 - shell:
-      command: . scripts/macOS.sh
+    command: . scripts/macOS.sh
 - shell:
     - [echo "/usr/local/bin/fish" | sudo tee -a /etc/shells]
 - shell:
@@ -44,5 +44,7 @@
 - shell:
     - mackup restore
 # Installs iTerm Theme
+# - shell:
+#     command: [open iterm/Dracula.itermcolors;ok]
 - shell:
-      command: [open iterm/Dracula.itermcolors;ok]
+    command: git config --global core.excludesfile ~/.gitignore_global

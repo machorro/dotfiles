@@ -98,6 +98,12 @@ module.exports = {
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
 
+    // Set Hyper as default SSH client
+    defaultSSHApp: true,
+
+    // Canary channel update
+    updateChannel: 'canary',
+
     // for advanced config flags please refer to https://hyper.is/#cfg
 
     ayu: {

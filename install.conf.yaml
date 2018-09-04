@@ -5,8 +5,8 @@
 
 - clean: ['~']
 
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
+# - shell:
+#     - [git submodule update --init --recursive, Installing submodules]
 
 - link:
     ~/.config/fish: fish
@@ -27,27 +27,19 @@
 
 # installs software
 - shell:
-    command: . scripts/brew.sh
-# Configures macOS
-- shell:
-    command: . scripts/macOS.sh
-- shell:
     - [git config --global core.excludesfile ~/.gitignore_global, Setting up global gitignore]
-- shell:
+    - [. scripts/brew.sh, Install Brew]
+    - [. scripts/macOS.sh, Setup macOS]
+    # Gems
     - [sudo gem install bundler, Install Bundler]
-- shell:
-    - [bundle install ~/.dotfiles/, Install Gems]
-- shell:
+    - [bundle install --gemfile=~/.dotfiles/Gemfile, Install Gems]
+    # Fish
     - [echo "/usr/local/bin/fish" | sudo tee -a /etc/shells]
-- shell:
     - [chsh -s /usr/local/bin/fish]
-- shell:
     - exec fish -l
-# Install fisher packages
-- shell:
+    # Install fisher packages
     - fisher simple
-# Restore Mackup
-- shell:
+    # Restore Mackup
     - mackup restore
 # Installs iTerm Theme
 # - shell:

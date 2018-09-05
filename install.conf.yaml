@@ -41,9 +41,9 @@
     - [chsh -s /usr/local/bin/fish]
     - exec fish -l
     # Install fisher packages
-    - fisher simple
+    - [fisher, "Installing Fish plugins"]
     # Restore Mackup
-    - mackup restore
+    # - mackup restore
 # Installs iTerm Theme
 # - shell:
 #     command: [open iterm/Dracula.itermcolors;ok]

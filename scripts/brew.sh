@@ -11,7 +11,7 @@ fi
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew bundle install
+brew bundle --file=scripts/Brewfile
 
 # Remove outdated versions from the cellar
 brew cleanup

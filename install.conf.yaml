@@ -32,6 +32,7 @@
     - [git config --global core.excludesfile ~/.gitignore_global, Setting up global gitignore]
     # - [. scripts/brew.sh, Install Brew]
     - [. scripts/macOS.sh, Setup macOS]
+    - [vim +'PlugInstall --sync' +qall &> /dev/null, "Installing Vim plugins"]
     # Gems
     - [sudo gem install bundler, Install Bundler]
     - [bundle install --gemfile=~/.dotfiles/Gemfile, Install Gems]

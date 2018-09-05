@@ -24,7 +24,7 @@
     # Xcode Themes
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode/FontAndColorThemes
 
-brewfile:
+- brewfile:
     file: scripts/Brewfile
 
 # installs software

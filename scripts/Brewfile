@@ -63,6 +63,10 @@ cask 'macvim'
 cask 'osxfuse'
 cask 'hyper'
 cask 'cyberduck'
+cask 'sip'
+cask 'shuttle'
+cask 'rocket'
+cask 'vanilla'
 
 # SSH File System
 brew 'sshfs' #this has to be installed after osxfuse

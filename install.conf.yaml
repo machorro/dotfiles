@@ -21,6 +21,8 @@
     ~/.gvirmc: gvimrc
     # LLDBD
     ~/.lldbinit: lldbinit
+    # Xcode Themes
+    ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode/FontAndColorThemes
 
 brewfile:
     file: scripts/Brewfile

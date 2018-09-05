@@ -24,13 +24,10 @@
     # Xcode Themes
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode/FontAndColorThemes
 
-- brewfile:
-    file: scripts/Brewfile
-
 # installs software
 - shell:
     - [git config --global core.excludesfile ~/.gitignore_global, Setting up global gitignore]
-    # - [. scripts/brew.sh, Install Brew]
+    - [. scripts/brew.sh, Install Brew]
     - [. scripts/macOS.sh, Setup macOS]
     - [vim +'PlugInstall --sync' +qall &> /dev/null, "Installing Vim plugins"]
     # Gems

@@ -11,11 +11,7 @@ fi
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
 brew bundle install
-
-# Make ZSH the default shell environment
-chsh -s $(which fish)
 
 # Remove outdated versions from the cellar
 brew cleanup

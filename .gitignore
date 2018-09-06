@@ -1,4 +1,5 @@
 *.DS_Store
+Gemfile.lock
 vim/plugged
 fish/fishd.*
 fish/conf.d/

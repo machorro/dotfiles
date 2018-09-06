@@ -1,4 +1,6 @@
 *.DS_Store
-fish/fishd.*
 vim/plugged
+fish/fishd.*
+fish/conf.d/
 fish/functions
+fish/completions

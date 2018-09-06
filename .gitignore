@@ -1,3 +1,4 @@
 *.DS_Store
 fish/fishd.*
 vim/plugged
+fish/functions

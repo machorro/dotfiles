@@ -21,6 +21,8 @@
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
     ~/.hushlogin: hushlogin #silences shell login message
+    ~/.sshrc: sshrc # sshrc
+
     # vim
     ~/.vim: vim
     ~/.xvimrc: xvimrc # Xvim

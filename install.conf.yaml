@@ -28,7 +28,8 @@
     ~/.xvimrc: xvimrc # Xvim
     ~/.vimrc: vimrc
     ~/.gvirmc: gvimrc
-    # LLDBD
+
+    # LLDBD init for Chisel
     ~/.lldbinit: lldbinit
     # Xcode Themes
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode/FontAndColorThemes
@@ -50,6 +51,3 @@
     - [fisher, "Installing Fish plugins"]
     # Restore Mackup
     # - mackup restore
-# Installs iTerm Theme
-# - shell:
-#     command: [open iterm/Dracula.itermcolors;ok]

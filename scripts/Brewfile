@@ -38,6 +38,8 @@ brew 'swiftgen'
 brew 'cocoapods'
 brew 'carthage'
 brew 'chisel'
+brew 'rbenv'
+brew 'ruby-build'
 
 # Settings backup
 brew 'mackup' 

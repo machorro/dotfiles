@@ -28,5 +28,3 @@ set hilite (which highlight)
 set -x LESSOPEN "| $hilite %s --out-format xterm256 --line-numbers --quiet --force --style vampire"
 set -x LESS " -R --ignore-case --raw-control-chars"
 
-# rbenv
-# status --is-interactive; and source (rbenv init -|psub)

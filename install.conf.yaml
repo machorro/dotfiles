@@ -13,6 +13,8 @@
     ~/.gitignore_global: 
         path: gitignore_global
         force: true
+
+    ~/.gemrc: gemrc
     ~/.hyper.js: hyper.js
     # vim
     ~/.vim: vim

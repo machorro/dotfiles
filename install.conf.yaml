@@ -15,7 +15,12 @@
         force: true
 
     ~/.gemrc: gemrc
+    
+    # bash
     ~/.hyper.js: hyper.js
+    ~/.bashrc: bashrc
+    ~/.bash_profile: bash_profile
+    ~/.hushlogin: hushlogin #silences shell login message
     # vim
     ~/.vim: vim
     ~/.xvimrc: xvimrc # Xvim

@@ -1,4 +1,4 @@
-set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local
+set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local /usr/local/sbin
 #$HOME/bin $HOME/dotfiles/bin $HOME/.rvm/bin $(brew --prefix ruby)/bin $(brew --prefix)/share/npm/bin
 
 # fuxor git to non-interactively merge commits

@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 " UI
 "Plug 'crusoexia/vim-monokai'
-Plug 'dracula/vim'
+Plug 'ayu-theme/ayu-vim'
 Plug 'itchyny/lightline.vim'
 
 " Syntastic
@@ -125,7 +125,8 @@ syntax enable
 " Color Schemes
 syntax on
 "" colorscheme monokai
-colorscheme dracula 
+let ayucolor="light"
+colorscheme ayu 
 set t_Co=256  " vim-monokai now only support 256 colours in terminal.
 
 " Set extra options when running in GUI mode

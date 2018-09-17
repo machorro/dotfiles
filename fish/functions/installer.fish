@@ -1,1 +1,0 @@
-/Users/humbertog/.config/fisherman/pure/installer.fish

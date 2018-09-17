@@ -1,5 +1,6 @@
-set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local /usr/local/sbin
-#$HOME/bin $HOME/dotfiles/bin $HOME/.rvm/bin $(brew --prefix ruby)/bin $(brew --prefix)/share/npm/bin
+set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local /usr/local/sbin 
+# set rbenv before /usr/local/bin
+set -x PATH $HOME/.rbenv/shims/ $PATH
 
 # fuxor git to non-interactively merge commits
 set -x GIT_MERGE_AUTOEDIT no

@@ -46,7 +46,7 @@ brew 'sshrc' # ssh thah loads rc files on remote hosts
 brew 'mackup' 
 
 # Casks
-cask '1password-beta'
+cask '1password'
 cask 'dropbox'
 cask 'imageoptim'
 cask 'imagealpha'

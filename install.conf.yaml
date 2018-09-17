@@ -38,10 +38,13 @@
 - shell:
     - [git config --global core.excludesfile ~/.gitignore_global, Setting up global gitignore]
     - [. scripts/brew.sh, Install Brew]
-    - [. scripts/macOS.sh, Setup macOS]
     - [vim +'PlugInstall --sync' +qall &> /dev/null, "Installing Vim plugins"]
+    # Install Ruby 2.5.1 with rbenv, this version can be changed to latest if wanted
+    # Rbenv will stall for a while installing
+    - [rbenv install 2.5.1, Install ruby version 2.5.1 could take a while]
+    - ["export PATH=~/.rbenv/shims:$PATH"]
     # Gems
-    - [sudo gem install bundler, Install Bundler]
+    - [gem install bundler, Install Bundler]
     - [bundle install --gemfile=~/.dotfiles/Gemfile, Install Gems]
     # Fish
     - [echo "/usr/local/bin/fish" | sudo tee -a /etc/shells]
@@ -49,5 +52,7 @@
     - exec fish -l
     # Install fisher packages
     - [fisher, "Installing Fish plugins"]
+    # This will kill everythingh at the end of the script
+    - [. scripts/macOS.sh, Setup macOS]
     # Restore Mackup
     # - mackup restore

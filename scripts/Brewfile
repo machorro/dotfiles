@@ -41,6 +41,8 @@ brew 'chisel'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'sshrc' # ssh thah loads rc files on remote hosts
+brew 'htop'
+brew 'tldr'
 
 # Settings backup
 brew 'mackup' 

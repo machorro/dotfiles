@@ -95,7 +95,7 @@ cask 'font-hack'
 cask 'font-anonymous-pro'
 
 # Mac App Store Apps
-mas 'Tweetbot', id: 557168941
+mas 'Tweetbot3', id: 1384080005
 mas 'Expressions', id: 913158085
 mas '1Blocker', id: 1107421413
 mas 'DayOne', id: 1055511498

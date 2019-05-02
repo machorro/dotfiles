@@ -8,7 +8,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Inconsolata, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Source Code Pro, Inconsolata, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -29,7 +29,7 @@ module.exports = {
     borderColor: '#333',
 
     // size of window by pixels (with, height)
-    windowSize: [800, 560],
+    windowSize: [1235, 500],
 
     // custom css to embed in the main window
     css: '',
@@ -76,6 +76,7 @@ module.exports = {
     // make sure to use a full path if the binary name doesn't work
     // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
     // if you're using powershell, make sure to remove the `--login` below
+//    shell: '/usr/local/bin/zsh',
     shell: '/usr/local/bin/fish',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
@@ -121,7 +122,8 @@ module.exports = {
       //Themes
       // "hyperterm-panda", // dark
       // "hyper-papercolor", // light
-      'hyper-ayu-light',
+      'hyper-ayu-mirage',
+//      'hyper-ayu-light',
 
       //    Plugins
       "hyper-statusline",

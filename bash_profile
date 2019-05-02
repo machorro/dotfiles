@@ -7,9 +7,9 @@
 # Color LS
 colorflag="--color=auto -G"
 alias ls="command ls ${colorflag}"
-alias l="ls -lF ${colorflag}" # all files, in long format
-alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
-alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
+alias l="ls -lhF ${colorflag}" # all files, in long format
+alias la="ls -lahF ${colorflag}" # all files inc dotfiles, in long format
+alias lsd='ls -lhF ${colorflag} | grep "^d"' # only directories
 
 # Quicker navigation
 alias ..="cd .."

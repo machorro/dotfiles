@@ -45,7 +45,7 @@ brew 'htop'
 brew 'tldr'
 
 # Settings backup
-brew 'mackup' 
+brew 'mackup'
 
 # Casks
 cask '1password'
@@ -54,26 +54,24 @@ cask 'imageoptim'
 cask 'imagealpha'
 cask 'iterm2'
 cask 'visual-studio-code'
-cask 'google-chrome'
+#cask 'google-chrome'
 cask 'tower2'
 cask 'kaleidoscope'
-cask 'spotify'
 cask 'alfred'
-cask 'realm-browser'
 cask 'nvalt'
-cask 'tunnelblick-beta'
+cask 'tunnelblick'
 cask 'insomnia'
 cask 'macvim'
 cask 'osxfuse'
 cask 'hyper'
-cask 'cyberduck'
 cask 'sip'
 cask 'shuttle'
 cask 'rocket'
 cask 'vanilla'
+cask 'setapp'
 
 # SSH File System
-brew 'sshfs' #this has to be installed after osxfuse
+#brew 'sshfs' #this has to be installed after osxfuse
 
 # Quicklook Plugins
 cask 'qlcolorcode'
@@ -95,13 +93,17 @@ cask 'font-hack'
 cask 'font-anonymous-pro'
 
 # Mac App Store Apps
-mas 'Tweetbot3', id: 1384080005
-mas 'Expressions', id: 913158085
 mas '1Blocker', id: 1107421413
-mas 'DayOne', id: 1055511498
-mas 'aText', id: 488566438
 mas '2Do', id: 477670270
+mas 'aText', id: 488566438
+mas 'DayOne', id: 1055511498
+mas 'Dropzone 3', id:695406827
+mas 'Expressions', id: 913158085
 mas 'Magnet', id: 441258766
 mas 'Marked 2', id: 890031187
+mas 'Quests', id: 1447415753
 mas 'Slack', id:803453959
-mas 'Dropzone 3', id:695406827
+mas 'StopTheMadness', id: 1376402589
+mas 'TabsToLinks', id: 1451408472
+mas 'ToothFairy', id: 1191449274
+mas 'Tweetbot3', id: 1384080005

@@ -255,5 +255,7 @@
 
 [fetch]
         prune = true
+[user]
+	name = Humberto Gutierrez
 [mergetool]
 	keepBackup = false

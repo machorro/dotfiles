@@ -54,8 +54,7 @@ cask 'imageoptim'
 cask 'imagealpha'
 cask 'iterm2'
 cask 'visual-studio-code'
-#cask 'google-chrome'
-cask 'tower2'
+cask 'tower3'
 cask 'kaleidoscope'
 cask 'alfred'
 cask 'nvalt'
@@ -69,6 +68,7 @@ cask 'shuttle'
 cask 'rocket'
 cask 'vanilla'
 cask 'setapp'
+cask 'keyboard-maestro'
 
 # SSH File System
 #brew 'sshfs' #this has to be installed after osxfuse
@@ -91,11 +91,11 @@ cask 'font-source-code-pro'
 cask 'font-inconsolata'
 cask 'font-hack'
 cask 'font-anonymous-pro'
+cask 'font-cascadia'
 
 # Mac App Store Apps
 mas '1Blocker', id: 1107421413
 mas '2Do', id: 477670270
-mas 'aText', id: 488566438
 mas 'DayOne', id: 1055511498
 mas 'Dropzone 3', id:695406827
 mas 'Expressions', id: 913158085

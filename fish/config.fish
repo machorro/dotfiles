@@ -1,6 +1,7 @@
-set -x PATH /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local /usr/local/sbin 
+set -x PATH ~/.rbenv/shims /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local /usr/local/sbin 
 # set rbenv before /usr/local/bin
 set -x PATH $HOME/.rbenv/shims/ $PATH
+set -x PATH $HOME/Library/Android/sdk/tools $PATH
 
 # fuxor git to non-interactively merge commits
 set -x GIT_MERGE_AUTOEDIT no
@@ -28,4 +29,6 @@ set -x LC_COLLATE C
 set hilite (which highlight)
 set -x LESSOPEN "| $hilite %s --out-format xterm256 --line-numbers --quiet --force --style vampire"
 set -x LESS " -R --ignore-case --raw-control-chars"
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 

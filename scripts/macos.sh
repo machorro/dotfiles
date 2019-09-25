@@ -147,7 +147,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en" 
+defaults write NSGlobalDomain AppleLanguages -array "en"
 defaults write NSGlobalDomain AppleLocale -string "en_CA@currency=CAD"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
@@ -383,10 +383,10 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
 
 # Show Safari’s bookmarks bar by default
-defaults write com.apple.Safari ShowFavoritesBar -bool true 
+defaults write com.apple.Safari ShowFavoritesBar -bool true
 
 # Show Safari’s sidebar in Top Sites
-defaults write com.apple.Safari ShowSidebarInTopSites -bool true 
+defaults write com.apple.Safari ShowSidebarInTopSites -bool true
 
 # Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -693,10 +693,22 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true"
 defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 
 ###############################################################################
-# Spectacle.app                                                               #
+# iTunes.app                                                               #
 ###############################################################################
 
-# Set up my preferred keyboard shortcuts
+# Disables iTunes from opening when a Device is connected
+defaults write com.apple.iTunesHelper ignore-devices 1
+
+###############################################################################
+# Xcode.app                                                               #
+###############################################################################
+
+# Makes Renaming run faster (Xcode 11?)
+defaults write com.apple.dt.Xcode CodeFoldingAnimationSpeed -int 0
+# Full screen mode for the iOS Simulator
+defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
+# Displays build time
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
 
 
 ###############################################################################

@@ -186,7 +186,7 @@
 	editor = vim
         abbrev = 12
         attributesfile = ~/.gitattributes
-        excludesfile = ~/.gitignore_global
+	excludesfile = /Users/hgutierrez/.gitignore_global
         autocrlf = input
         mergeoptions = --no-edit
         ignorecase = false

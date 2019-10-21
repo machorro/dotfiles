@@ -1,0 +1,21 @@
+#!/bin/bash
+RED='\033[0;91m'
+NC='\033[0m'
+
+# GIT_FLAG=$3
+
+# pod_install() {
+#   if [ $GIT_FLAG -eq 0 ]; then return; fi;
+
+#   if [ -r Podfile ] || $3 != 0 ; then
+#     echo -e "${RED}-= Checking CocoaPods =-${NC}"
+#     command -v pod >/dev/null 2>&1 || { echo -e >&2 "${RED}-= CocoaPod not found. Install it and try again! =-${NC}"; exit 1; }
+#     echo -e "${RED}-= Podding libs =-${NC}"
+#     pod install
+#     echo -e "${RED}-= All done! =-${NC}"
+#   fi
+# }
+
+# main() {
+  # pod_install
+# }

@@ -17,7 +17,7 @@ set -x LS_COLORS "di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34:su=0:sg=0:tw=0:ow
 set -x GREP_OPTIONS '--color=auto'
 set -x GREP_COLOR '3;33'
 
-set -x PAGER less --quit-if-one-screen --no-init -c
+set -x PAGER less --quit-if-one-screen --no-init
 set -x EDITOR 'vim'
 
 set -x LANG en_CA.UTF-8

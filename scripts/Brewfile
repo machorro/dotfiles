@@ -6,104 +6,100 @@ tap 'homebrew/bundle'
 
 # Install GNU utilities
 brew 'coreutils'
-brew 'moreutils'
 brew 'findutils'
-brew 'tree'
-brew 'wget'
 brew 'grep'
+brew 'moreutils'
 brew 'openssh'
 brew 'osxutils'
+brew 'tree'
+brew 'wget'
 
 # Update git and install utilities
+brew 'ccat'
 brew 'git'
 brew 'git-extras'
-brew 'hub'
-brew 'wifi-password'
-brew 'httpie'
-brew 'ccat'
 brew 'highlight'
+brew 'httpie'
+brew 'wifi-password'
 
 # Intall shells
+brew 'bash'
+brew 'fish'
 brew 'zsh'
 brew 'zsh-completions'
-brew 'fish'
-brew 'bash'
 
 # Dev tools
-brew 'xcenv' # Install Xcode helpers
-brew 'nvm' # Node and Rails
-brew 'python'
-brew 'swiftlint'
-brew 'swiftgen'
-brew 'cocoapods'
 brew 'carthage'
 brew 'chisel'
+brew 'cocoapods'
+brew 'htop'
+brew 'nvm' # Node and Rails
+brew 'python'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'sshrc' # ssh thah loads rc files on remote hosts
-brew 'htop'
+brew 'swiftgen'
+brew 'swiftlint'
 brew 'tldr'
-
-# Settings backup
-brew 'mackup'
+brew 'xcenv' # Install Xcode helpers
 
 # Casks
 cask '1password'
-cask 'dropbox'
-cask 'imageoptim'
-cask 'imagealpha'
-cask 'iterm2'
-cask 'visual-studio-code'
-cask 'tower3'
-cask 'kaleidoscope'
 cask 'alfred'
-cask 'nvalt'
-cask 'tunnelblick'
+cask 'dropbox'
+cask 'imagealpha'
+cask 'imageoptim'
 cask 'insomnia'
-cask 'macvim'
-cask 'osxfuse'
-cask 'hyper'
-cask 'sip'
-cask 'shuttle'
-cask 'rocket'
-cask 'vanilla'
-cask 'setapp'
+cask 'iterm2'
+cask 'kaleidoscope'
 cask 'keyboard-maestro'
+cask 'rocket'
+cask 'setapp'
+cask 'sip'
+cask 'tower3'
+cask 'tunnelblick'
+cask 'visual-studio-code'
 
 # SSH File System
 #brew 'sshfs' #this has to be installed after osxfuse
 
 # Quicklook Plugins
-cask 'qlcolorcode'
-cask 'qlstephen'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'qlprettypatch'
-cask 'quicklook-csv'
 cask 'betterzip'
-cask 'qlimagesize'
-cask 'webpquicklook'
-cask 'suspicious-package'
 cask 'provisionql'
+cask 'qlcolorcode'
+cask 'qlimagesize'
+cask 'qlmarkdown'
+cask 'qlprettypatch'
+cask 'qlstephen'
+cask 'quicklook-csv'
+cask 'quicklook-json'
+cask 'suspicious-package'
+cask 'webpquicklook'
 
 # Fonts
-cask 'font-source-code-pro'
-cask 'font-inconsolata'
-cask 'font-hack'
 cask 'font-anonymous-pro'
 cask 'font-cascadia'
+cask 'font-hack'
+cask 'font-inconsolata'
+cask 'font-source-code-pro'
 
 # Mac App Store Apps
 mas '1Blocker', id: 1107421413
 mas '2Do', id: 477670270
+mas 'DaisyDisk', id: 411643860
+mas 'Dato', id: 1470584107
 mas 'DayOne', id: 1055511498
+mas 'Drafts', id: 1435957248
 mas 'Dropzone 3', id:695406827
 mas 'Expressions', id: 913158085
 mas 'Magnet', id: 441258766
 mas 'Marked 2', id: 890031187
 mas 'Quests', id: 1447415753
+mas 'Reeder', id: 1449412482
 mas 'Slack', id:803453959
+mas 'Soulver 2', id: 413965349
 mas 'StopTheMadness', id: 1376402589
 mas 'TabsToLinks', id: 1451408472
 mas 'ToothFairy', id: 1191449274
 mas 'Tweetbot3', id: 1384080005
+mas 'Unarchiver', id: 425424353

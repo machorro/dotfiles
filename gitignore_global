@@ -39,6 +39,7 @@ Temporary Items
 ## Build generated
 build/
 DerivedData/
+output/
 
 ## Various settings
 *.pbxuser
@@ -120,3 +121,6 @@ build/
 *~.nib
 \#*#
 .#*
+
+# Ruby
+.ruby-version

@@ -32,3 +32,5 @@ set -x LESS " -R --ignore-case --raw-control-chars"
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
+# Bindings
+fish_vi_key_bindings

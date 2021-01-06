@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 " UI
 "Plug 'crusoexia/vim-monokai'
-"Plug 'ayu-theme/ayu-vim'
+Plug 'ayu-theme/ayu-vim'
 Plug 'itchyny/lightline.vim'
 
 " Syntastic

@@ -2,5 +2,9 @@
 
 source "https://rubygems.org"
 
-gem "xcode-install"
-gem "fastlane"
+gem 'cocoapods'
+gem 'fastlane'
+gem 'twine'
+gem 'xcode-install'
+gem 'xcodeproj'
+gem 'xcpretty'

@@ -5,11 +5,11 @@
 # alias s='open -a "Sublime Text"'
 
 # Color LS
-colorflag="--color=auto -G"
-alias ls="command ls ${colorflag}"
-alias l="ls -lhF ${colorflag}" # all files, in long format
-alias la="ls -lahF ${colorflag}" # all files inc dotfiles, in long format
-alias lsd='ls -lhF ${colorflag} | grep "^d"' # only directories
+# colorflag="--color=auto -G"
+# alias ls="command ls ${colorflag}"
+# alias l="ls -lhF ${colorflag}" # all files, in long format
+# alias la="ls -lahF ${colorflag}" # all files inc dotfiles, in long format
+# alias lsd='ls -lhF ${colorflag} | grep "^d"' # only directories
 
 # Quicker navigation
 alias ..="cd .."
@@ -75,6 +75,10 @@ export RESET
 # Git branch details
 function parse_git_dirty() {
 	[[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+}
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 # Change this symbol to something sweet.

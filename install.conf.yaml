@@ -15,6 +15,7 @@
   
     # bash
     ~/.bashrc: $HOME/.dotfiles/bashrc
+    ~/.zshrc: $HOME/.dotfiles/zshrc
     ~/.bash_profile: $HOME/.dotfiles/bash_profile
     ~/.hushlogin: $HOME/.dotfiles/hushlogin #silences shell login message
     ~/.sshrc: $HOME/.dotfiles/sshrc # sshrc
@@ -41,7 +42,7 @@
     - [gem install bundler, Install Bundler]
     - [bundle install --gemfile=$HOME/.dotfiles/Gemfile, Install Gems]
     # Fish
-    - [echo "/usr/local/bin/fish" | sudo tee -a /etc/shells]
+    - [echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells]
     - [chsh -s /usr/local/bin/fish]
     - exec fish -l
     # Install fisher packages

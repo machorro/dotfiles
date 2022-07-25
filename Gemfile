@@ -2,6 +2,7 @@
 
 source "https://rubygems.org"
 
+gem 'doing'
 gem 'cocoapods'
 gem 'fastlane'
 gem 'twine'

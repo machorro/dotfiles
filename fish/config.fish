@@ -1,7 +1,16 @@
-set -x PATH ~/.rbenv/shims /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local /usr/local/sbin 
+fish_add_path /usr/local/opt/coreutils/libexec/gnubin
+fish_add_path /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/sbin
+fish_add_path $HOME/.rbenv/shims
+fish_add_path -m /opt/homebrew/bin/ /opt/homebrew/sbin
+fish_add_path /opt/bin
+fish_add_path /Users/hgutierrez/Library/Python/3.8/bin
+fish_add_path $HOME/Library/Android/sdk/tools
+
+#set -x PATH ~/.rbenv/shims /usr/local/opt/coreutils/libexec/gnubin  /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local /usr/local/sbin /opt/homebrew/bin/ /Users/hgutierrez/Library/Python/3.8/bin /opt/bin
+
 # set rbenv before /usr/local/bin
-set -x PATH $HOME/.rbenv/shims/ $PATH
-set -x PATH $HOME/Library/Android/sdk/tools $PATH
+# set -x PATH $HOME/.rbenv/shims/ $PATH
+# set -x PATH $HOME/Library/Android/sdk/tools $PATH
 
 # fuxor git to non-interactively merge commits
 set -x GIT_MERGE_AUTOEDIT no
@@ -19,7 +28,8 @@ set -x GREP_OPTIONS '--color=auto'
 set -x GREP_COLOR '3;33'
 
 set -x PAGER less --quit-if-one-screen --no-init
-set -x EDITOR 'vim'
+set -x EDITOR 'code'
+set -x VISUAL "$EDITOR"
 
 set -x LANG en_CA.UTF-8
 set -x LC_CTYPE "en_CA.UTF-8"

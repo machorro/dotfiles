@@ -192,10 +192,10 @@
 	keepBackup = false
 
 [core]
-editor = vim
+  editor = code
   abbrev = 12
   attributesfile = ~/.gitattributes
-excludesfile = ~/.dotfiles/gitignore_global
+  excludesfile = ~/.dotfiles/gitignore_global
   autocrlf = input
   mergeoptions = --no-edit
   ignorecase = false

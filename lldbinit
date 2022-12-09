@@ -1,1 +1,11 @@
-command script import /usr/local/opt/chisel/libexec/fblldb.py
+# Adds Kaleidoscope diffing to lldb
+command script import "~/Library/Application Support/Kaleidoscope/lldb_ksdiff.py"
+
+# pretty prints a json object
+command regex pjson 's/(.+)/expr print(NSString(string: String(data: try! JSONSerialization.data(withJSONObject: %1, options: .prettyPrinted), encoding: .utf8)!))/'
+
+# Chisel from facebook
+# command script import /usr/local/opt/chisel/libexec/fblldb.py
+
+# po alternative https://github.com/kastiglione/swift_po 
+command script import ~/.dotfiles/lldb_scripts/swift_po/spo.py

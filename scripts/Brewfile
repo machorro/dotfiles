@@ -22,43 +22,44 @@ brew 'highlight'
 brew 'wifi-password'
 
 # Brew Dev tools
-brew 'fish' # Fish Shell
-# brew 'carthage'
+brew 'fish'
 brew 'chisel'
-# brew 'cocoapods'
 brew 'httpie'
 brew 'htop'
 brew 'nvm' # Node and Rails
 brew 'python'
 brew 'rbenv'
 brew 'ruby-build'
-brew 'sshrc' # ssh thah loads rc files on remote hosts
+brew 'swiftformat'
 brew 'swiftgen'
 brew 'swiftlint'
 brew 'tldr'
-brew 'xcenv' # Install Xcode helpers
 
 # Casks
 cask '1password'
 cask 'alfred'
+cask 'bunch'
 cask 'contexts'
-cask 'elecom-mouse-assistant'
 cask 'imagealpha'
 cask 'imageoptim'
 cask 'keyboard-maestro'
 cask 'rocket'
-cask 'sip'
+cask 'steermouse'
 
 # Casks Dev tools
+cask 'devtoys'
+cask 'espanso'
 cask 'iterm2'
 cask 'kaleidoscope'
 cask 'paw'
+cask 'periphery'
+cask 'robotsandpencils/made/xcodes'
+cask 'sf-symbols'
+cask 'sublime-text'
 cask 'tower'
 cask 'tunnelblick'
 cask 'visual-studio-code'
 cask 'wwdc'
-cask 'robotsandpencils/made/xcodes'
-cask 'sublime-text'
 
 # Quicklook Plugins
 cask 'betterzip'

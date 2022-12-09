@@ -124,3 +124,6 @@ build/
 
 # Ruby
 .ruby-version
+
+# Bitrise
+.bitrise.secrets.yml

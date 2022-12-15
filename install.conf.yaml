@@ -36,8 +36,9 @@
     - [vim +'PlugInstall --sync' +qall &> /dev/null, "Installing Vim plugins"]
     # Install Ruby 2.5.1 with rbenv, this version can be changed to latest if wanted
     # Rbenv will stall for a while installing
-    - [rbenv install 2.6.7, Install ruby version 2.6.5 could take a while]
-    - ["export PATH=~/.rbenv/shims:$PATH"]
+    - [rbenv install $(rbenv install -l | grep -v - | tail -1), Install latest ruby version, could take a while]
+    - [rbenv global $(rbenv global | grep -v - | tail -1), Configure global ruby version]
+    # - ["export PATH=~/.rbenv/shims:$PATH"]
     # Gems
     - [gem install bundler, Install Bundler]
     - [bundle install --gemfile=$HOME/.dotfiles/Gemfile, Install Gems]

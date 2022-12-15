@@ -401,6 +401,9 @@ defaults write com.apple.dock orientation right
 # Prevents Apps from becoming zombies after being unattended in the background
 defaults write -g NSDisableAutomaticTermination -bool TRUE
 
+# Makes alers wider
+defaults write -g NSAlertMetricsGatheringEnabled -bool false
+
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################

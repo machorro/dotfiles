@@ -7,15 +7,15 @@
 	<key>DVTConsoleDebuggerInputTextFont</key>
 	<string>SFMono-Regular - 14.0</string>
 	<key>DVTConsoleDebuggerOutputTextColor</key>
-	<string>1 1 1 1</string>
+	<string>0.985542 0.00945342 0.999181 1</string>
 	<key>DVTConsoleDebuggerOutputTextFont</key>
 	<string>SFMono-Regular - 14.0</string>
 	<key>DVTConsoleDebuggerPromptTextColor</key>
-	<string>0.255 0.714 0.27 1</string>
+	<string>0.1277 0.999775 0.999047 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
 	<string>SFMono-Regular - 14.0</string>
 	<key>DVTConsoleExectuableInputTextColor</key>
-	<string>1 1 1 1</string>
+	<string>0.999993 0.999963 0.0410148 1</string>
 	<key>DVTConsoleExectuableInputTextFont</key>
 	<string>SFMono-Regular - 14.0</string>
 	<key>DVTConsoleExectuableOutputTextColor</key>
@@ -146,6 +146,16 @@
 		<string>1 1 1 1</string>
 		<key>xcode.syntax.preprocessor</key>
 		<string>0.921569 0.870588 0.368627 1</string>
+		<key>xcode.syntax.regex</key>
+		<string>0.921569 0.109804 0.14902 1</string>
+		<key>xcode.syntax.regex.capturename</key>
+		<string>0.401263 0.960509 0.620743 1</string>
+		<key>xcode.syntax.regex.charname</key>
+		<string>0.231099 0.749934 0.998763 1</string>
+		<key>xcode.syntax.regex.number</key>
+		<string>0.662745 0.388235 1 1</string>
+		<key>xcode.syntax.regex.other</key>
+		<string>1 1 1 1</string>
 		<key>xcode.syntax.string</key>
 		<string>0.921569 0.109804 0.14902 1</string>
 		<key>xcode.syntax.url</key>
@@ -202,6 +212,16 @@
 		<key>xcode.syntax.plain</key>
 		<string>JetBrainsMono-Regular - 14.0</string>
 		<key>xcode.syntax.preprocessor</key>
+		<string>JetBrainsMono-Regular - 14.0</string>
+		<key>xcode.syntax.regex</key>
+		<string>JetBrainsMono-Regular - 14.0</string>
+		<key>xcode.syntax.regex.capturename</key>
+		<string>JetBrainsMono-Regular - 14.0</string>
+		<key>xcode.syntax.regex.charname</key>
+		<string>JetBrainsMono-Regular - 14.0</string>
+		<key>xcode.syntax.regex.number</key>
+		<string>JetBrainsMono-Regular - 14.0</string>
+		<key>xcode.syntax.regex.other</key>
 		<string>JetBrainsMono-Regular - 14.0</string>
 		<key>xcode.syntax.string</key>
 		<string>JetBrainsMono-Regular - 14.0</string>

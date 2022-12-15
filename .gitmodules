@@ -4,3 +4,6 @@
 [submodule "lldb_scripts/swift_po"]
 	path = lldb_scripts/swift_po
 	url = https://github.com/machorro/swift_po.git
+[submodule "dotbot-brew"]
+	path = dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git

@@ -30,9 +30,11 @@
     # Xcode Themes
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode/FontAndColorThemes
 
+- brewfile:
+    - scripts/Brewfile
+
 # installs software
 - shell:
-    - [. scripts/brew.sh, Install Brew]
     - [vim +'PlugInstall --sync' +qall &> /dev/null, "Installing Vim plugins"]
     # Install Ruby 2.5.1 with rbenv, this version can be changed to latest if wanted
     # Rbenv will stall for a while installing

@@ -6,4 +6,4 @@
 	url = https://github.com/machorro/swift_po.git
 [submodule "dotbot-brew"]
 	path = dotbot-brew
-	url = https://github.com/d12frosted/dotbot-brew.git
+	url = https://github.com/wren/dotbot-brew.git

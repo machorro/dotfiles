@@ -3,6 +3,13 @@
       relink: true
       create: true
 
+# Installs brew if missing
+- install-brew: true
+
+# Reads brewfile for packages to install
+- brewfile:
+    - scripts/Brewfile
+
 - clean: ['~']
 
 - link:
@@ -29,9 +36,6 @@
     ~/.lldbinit: $HOME/.dotfiles/lldbinit
     # Xcode Themes
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode/FontAndColorThemes
-
-- brewfile:
-    - scripts/Brewfile
 
 # installs software
 - shell:

@@ -39,6 +39,7 @@ brew 'tldr'
 # Casks
 cask '1password'
 cask 'alfred'
+cask 'arc'
 cask 'bunch'
 cask 'contexts'
 cask 'imagealpha'

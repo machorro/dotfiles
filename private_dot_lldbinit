@@ -1,0 +1,16 @@
+# pretty prints a json object
+command regex pjson 's/(.+)/expr print(NSString(string: String(data: try! JSONSerialization.data(withJSONObject: %1, options: .prettyPrinted), encoding: .utf8)!))/'
+
+# Chisel from facebook
+# command script import /usr/local/opt/chisel/libexec/fblldb.py
+
+# po alternative https://github.com/kastiglione/swift_po 
+command script import ~/.local/shared/chezmoi/swift_po/spo.py
+# command unalias po
+# command alias po spo
+
+# Higher timeout to avoid disconnection
+settings set plugin.process.gdb-remote.packet-timeout 300
+
+# Adds Kaleidoscope diffing to lldb
+command script import "/Users/humberto.gutierrez/Library/Application Support/Kaleidoscope/lldb_ksdiff.py"

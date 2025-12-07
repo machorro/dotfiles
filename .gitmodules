@@ -1,0 +1,3 @@
+[submodule "swift_po"]
+	path = swift_po
+	url = https://machorro@github.com/machorro/swift_po

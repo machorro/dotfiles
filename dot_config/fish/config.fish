@@ -59,5 +59,6 @@ status --is-interactive; and rbenv init - fish | source
 source $HOME/.config/fish/.functions.fish
 
 starship init fish | source
+atuin init fish | source
 
 export PATH="$PATH:$HOME/.local/bin"

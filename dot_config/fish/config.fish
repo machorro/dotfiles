@@ -6,16 +6,15 @@ fish_add_path /opt/bin
 fish_add_path /Users/hgutierrez/Library/Python/3.8/bin
 fish_add_path $HOME/Library/Android/sdk/tools
 fish_add_path $HOME/.swiftpm/bin
+fish_add_path $HOME/.local/bin
 
 set JAVA_HOME '/Applications/Android Studio.app/Contents/jbr/Contents/Home'
-# set JAVA_HOME '/opt/homebrew/bin/java'
 
 # Silence greeting
 set fish_greeting
-# set fish_greeting 'Lets fuck shit up!'
 
 # Starship configuration
-set -x STARSHIP_CONFIG $HOME/.dotfiles/symlinks/starship/starship.toml
+set -x STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 
 # fuxor git to non-interactively merge commits
 set -x GIT_MERGE_AUTOEDIT no
@@ -33,8 +32,8 @@ set -x GREP_OPTIONS '--color=auto'
 set -x GREP_COLOR '3;33'
 
 # set -x PAGER less --quit-if-one-screen --no-init
-set -x EDITOR 'code'
-set -x VISUAL "$EDITOR"
+set -x EDITOR 'vim'
+set -x VISUAL "bbedit"
 
 set -x LANG en_CA.UTF-8
 set -x LC_CTYPE "en_CA.UTF-8"
@@ -60,5 +59,3 @@ source $HOME/.config/fish/.functions.fish
 
 starship init fish | source
 atuin init fish | source
-
-export PATH="$PATH:$HOME/.local/bin"

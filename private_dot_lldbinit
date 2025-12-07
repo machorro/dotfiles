@@ -13,4 +13,4 @@ command script import ~/.local/shared/chezmoi/swift_po/spo.py
 settings set plugin.process.gdb-remote.packet-timeout 300
 
 # Adds Kaleidoscope diffing to lldb
-command script import "/Users/humberto.gutierrez/Library/Application Support/Kaleidoscope/lldb_ksdiff.py"
+command script import "~/Library/Application Support/Kaleidoscope/lldb_ksdiff.py"
